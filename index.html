@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seif Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="Style/Style.css">
+</head>
+<body style="transition: all 0.3s;">
+<div id="WhiteLoader">
+    <div class="lds-grid"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+</div>
+
+    <nav id="nav">
+        <span id="Left">Seif Portfolio</span>
+        <span id="Right">
+        <a style="text-decoration: none;" href="#Home">Home</a>
+        <a style="text-decoration: none;" href="#Introduction">Introduction</a>
+        <a style="text-decoration: none;" href="#MyWork">My work</a>
+        <a style="text-decoration: none;" href="#Hireme">Contact me </a>
+        </span>
+    </nav>
+
+    <div id="Home">
+        <div class="BlockLeft">
+            <h1 style="color: white;">Welcome to my protfolio</h1>
+            <p style="color: white;">this is a protfolio made with HTML5, CSS3
+                ,and JS to show-case some of the projects i made in sevral fields</p>
+            <br><button>Hire me</button>
+        </div>
+        
+    </div>
+    <div id="Introduction">
+        <div class="BlockLeft">
+            <h1>What Services you will Get from me!</h1>
+            <p>I'm a Freshman engineering student, with experience in Game Development, Ethical hachking, App development, IOT, PCB design, Web Development</p>
+        </div>
+    </div>
+
+    <div id="MyWork">
+        <h1>Projects</h1>
+        <div class="BlockUpper">
+            <div class="BlockElement">
+                <img src="Media/image/gamer.png" alt="Game" width="50" height="50">
+                <h3>Games development</h3>
+                <p style="font-size: 0.8em;">Made a 2D platformer game, 2D space shooter game
+                    and currently working on a 3D top down game. all developed in unity enginge</p>
+            </div>
+
+            <div class="BlockElement">
+                 <img src="Media/image/www.png" alt="Web" width="50" height="50">
+                <h3>Web development</h3>
+                <p style="font-size: 0.8em;"> Made Sevral dynamic Websites , including this portfolio. you can message me to check the rest if you are intersted</p>
+            </div>
+
+            <div class="BlockElement">
+                 <img src="Media/image/iot.png" alt="iot" width="50" height="50">
+                <h3>IOT applicaitons</h3>
+                <p style="font-size: 0.8em;">Working on a IOT mobile app that communicates with hardware designed by me and my colleagues to control your house lighting system</p>
+                
+            </div>
+
+            <div class="BlockElement">
+                <img src="Media/image/pcb.png" alt="pcb" width="50" height="50">
+                <h3>PCB design</h3>
+                <p style="font-size: 0.8em;">Made sevral pcb for different projects including an RC a pc joystick and currently working on a drone project</p>
+            </div>
+            
+        </div>
+    </div>
+    <div id="seperation"></div>
+    <div id="Hireme">
+        <div class="BlockLeft">
+            <h1>
+                have a question ? <br> wanna hire me ?
+            </h1>
+            <p style="color:#e47872;">Send me a mail directly</p>
+            <form action="#" class="contact-wrapper">
+                <fieldset style="  border: 0.5px solid #ec5b53; ">
+                    <legend>
+                        Contact Me
+                    </legend>    
+                    <input type="text" name="name" placeholder="Full Name"><br>
+                    <input type="email" name="email" placeholder="Email Address"><br>
+                    <textarea name="message" id="message" placeholder="Your Message"></textarea><br>
+                    <button class="submit-btn2" type="submit">Send Message</button>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+    <script src="JS/Functions.js"></script>
+
+</body>
+
+</html>

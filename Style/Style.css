@@ -1,0 +1,293 @@
+html,body{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    align-items: center;
+}
+.lds-grid {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-grid div {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #fcf;
+    animation: lds-grid 1.2s linear infinite;
+  }
+  .lds-grid div:nth-child(1) {
+    top: 8px;
+    left: 8px;
+    animation-delay: 0s;
+  }
+  .lds-grid div:nth-child(2) {
+    top: 8px;
+    left: 32px;
+    animation-delay: -0.4s;
+  }
+  .lds-grid div:nth-child(3) {
+    top: 8px;
+    left: 56px;
+    animation-delay: -0.8s;
+  }
+  .lds-grid div:nth-child(4) {
+    top: 32px;
+    left: 8px;
+    animation-delay: -0.4s;
+  }
+  .lds-grid div:nth-child(5) {
+    top: 32px;
+    left: 32px;
+    animation-delay: -0.8s;
+  }
+  .lds-grid div:nth-child(6) {
+    top: 32px;
+    left: 56px;
+    animation-delay: -1.2s;
+  }
+  .lds-grid div:nth-child(7) {
+    top: 56px;
+    left: 8px;
+    animation-delay: -0.8s;
+  }
+  .lds-grid div:nth-child(8) {
+    top: 56px;
+    left: 32px;
+    animation-delay: -1.2s;
+  }
+  .lds-grid div:nth-child(9) {
+    top: 56px;
+    left: 56px;
+    animation-delay: -1.6s;
+  }
+  @keyframes lds-grid {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+  
+#BKGVideo
+{
+  display: flex;
+  position: static;
+  left: -15px;
+  right: -15px;
+  width: 100%;
+  height: 100%;
+}
+
+#Left{
+    position: relative;
+    color: #ec5b53;
+    font-size: 20px;
+    left: 5%;
+    top: 40%;
+    font-weight: 500;
+}
+#Right{
+    position: relative;
+    right: -55%;
+    top: 45%;
+    margin-left: 10px;
+    margin-right: 10px;
+    /*padding: 10px;*/
+}
+#Right>a{
+    font-weight: 500;
+    transition:all 0.5f;;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    text-transform: capitalize;
+}
+#Right>a:hover{
+    color: #ec5b53;
+}
+
+h1{
+  font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";   font-size: 3em;
+   color: #ec5b53; 
+   left:30px;
+   bottom: 100px;
+   margin-top: 6%;
+   font-style: normal;
+   font-weight: 500;
+   text-transform: normal;
+    margin-left: 10%;
+    font-weight: 500;
+}
+a{color: black;}
+h3{
+  font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-size: 1.5em;
+    color: #32dbc6!important; 
+    left:30px;
+    bottom: 100px;
+    margin-top: 0px;
+    font-style: normal;
+    font-weight: 200;
+    text-transform: normal; 
+}
+nav{
+    position: absolute;/*if changed to fixed will be floating as required*/
+    width: 100%;
+    font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";    height: 70px;
+    top: 0;
+    height: 70px;
+    background-color: rgba(0,0,0,0);
+    transition: all 0.1s;
+    box-shadow: 0 0 0 0 rgba(0,0,0,.2);
+}
+
+#Home,#Introduction,#Hireme,#MyWork{
+border: 0.3px groove #ffffff;
+height: 100%;
+background-color: #fff;
+}
+p{
+   /* font-family: "Rubik",sans-serif;*/
+   font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: #10285d;
+    font-size: 16px;
+    line-height: 30px;
+    margin-left: 10%;
+}
+#Home{
+    /*background-image: url("hero_1.jpg"); //not dimmed*/
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("hero_1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+#Home:before{
+  background: rgba(0, 0, 0, 0.2);
+}
+.BlockLeft{
+    display: block;
+    width: 40%;
+    margin-bottom: 25%;
+    margin-left: 5%;
+    margin-top: 20%;
+    padding: 5px;
+}
+#Home>.BlockLeft>button{
+    transition: all 0.5s;
+    margin-left: 10%;
+    /*background-color: #e47872;*/
+    border: none;
+    color: #e47872;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+  }
+  #Home>.BlockLeft>button:hover{
+    box-shadow: 2px 2px 10px -2px rgba(0,0,0,.2);
+    background-color: #e47872;
+    color : white;
+    size: 1.5em;
+  }
+  #MyWork{
+    background-image: url("shape1.png");
+    background-size: cover;
+    background-position: center;
+   
+  }
+
+.BlockUpper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap ;
+    width: 90%;
+    margin: auto;
+    /*border: violet 1px solid;*/
+ 
+}
+.BlockElement{
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    transition: all .3s;
+    flex:1;
+    border-radius: 7px;
+    margin: 50px;
+    padding: 20px;
+    border: solid #e47872 0.1px;
+    width: 200px;
+    height: 360px;
+}
+.BlockElement>img{
+    box-sizing: inherit;
+    border-radius: 40%;
+    color: #e47872;
+    margin-bottom: 30px;
+}
+.BlockElement:hover{
+    /*background-color: #ec5b53;*/
+    color : white;
+    box-shadow: 2px 2px 10px -2px rgba(0,0,0,.2);
+    flex: 2;
+}
+#Hireme{
+    background-image: url("section_bg04.jpg");
+    background-size: cover;
+    background-position: center;
+    bottom: 0px;
+}
+
+#seperation{
+  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("img5.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 30%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+form{
+  position: relative;
+  display: flex;
+  left: 100%;
+  top: -450px;
+  width: 70%;
+  line-height: 100px;
+}
+form>input{
+border: #fcf;
+}
+#WhiteLoader{
+    /*transition: all 4s;*/
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    transition: all 3s;
+}
+#Introduction{
+  background-image: url("section_bg02.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+
